@@ -1,0 +1,26 @@
+@font-face {
+        font-style: normal;
+        font-weight: 400;
+    src: url('media/dpcomic.ttf');
+}
+
+
+#pane { -fx-background-image: url("media/main_screen_castle.jpg");
+  -fx-background-repeat: stretch;
+ -fx-background-size: cover;
+  -fx-font-family: 'DPComic Regular';
+    -fx-font-size: 20px;
+ }
+
+#optionspane
+{ -fx-background-image: url("media/main_screen_castle.jpg");
+   -fx-background-repeat: stretch;
+  -fx-background-size: cover;
+   -fx-font-family: 'DPComic Regular';
+     -fx-font-size: 20px;
+  }
+
+#insideBox{
+-fx-background-color:rgba(240, 240, 240, 0.2);
+}
+

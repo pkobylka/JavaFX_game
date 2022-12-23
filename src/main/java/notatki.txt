@@ -1,0 +1,26 @@
+    public void render(GraphicsContext content) {
+
+        int world_col = 0;
+        int world_row = 0;
+
+        final int world_X_pos = world_col * gc.rozmiarLudzika;
+        final int world_Y_pos = world_row * gc.rozmiarLudzika;
+
+                int screen_X_pos = world_X_pos - gc.hero.worldX + gc.dlugoscEkranu/2;
+                int screen_Y_pos = world_Y_pos - gc.hero.worldY + gc.szerokoscEkranu/2;
+
+        while (world_col < gc.dlugoscPlanszy && world_row < gc.szerokoscPlanszy) {
+            int tileNum = mapTile[world_col][world_row];
+
+            content.drawImage(kwadracik[tileNum].image, screen_X_pos, screen_Y_pos, gc.rozmiarLudzika, gc.rozmiarLudzika);
+            world_col++;
+
+            if (world_col == gc.dlugoscPlanszy) {
+                world_col = 0;
+                world_row++;
+
+            }
+        }
+    }
+
+^^^^^^^^^^^^^^^^^^^^ Funkcja która miała renderować mapę świata przy poruszaniu  się, wydaje mi się że nie działa dlatego że w gameControlerze nie zmienia isę p ozycja przy ruchu, muszę to poprawić

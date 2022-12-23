@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="RPG-fx-maven">
+    <output-path>$PROJECT_DIR$/out/artifacts/RPG_fx_maven</output-path>
+    <root id="root">
+      <element id="archive" name="RPG_fx_maven.jar">
+        <element id="module-output" name="RPG-fx-maven" />
+      </element>
+    </root>
+  </artifact>
+</component>
